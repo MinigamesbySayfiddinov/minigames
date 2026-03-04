@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Термин</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="quiz-page">
+  <div class="quiz-wrap">
+    <div class="quiz-card term-card">
+      <div class="quiz-top">
+        <div id="progress">Термин 1 / 12</div>
+        <div>Угадай термин</div>
+      </div>
+
+      <div class="term-label">Определение</div>
+      <h2 id="definitionText" class="term-definition">Загрузка...</h2>
+
+      <div id="termAnswerBox" class="answer-box hidden"></div>
+
+      <div class="quiz-bottom">
+        <button id="showTermBtn" class="action-btn">Показать термин</button>
+        <button id="nextTermBtn" class="action-btn">Следующий</button>
+        <a href="index.html" class="action-btn menu-link">Главное меню</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="term.js"></script>
+</body>
+</html>

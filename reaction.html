@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Реакция</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="quiz-page">
+  <div class="quiz-wrap">
+    <div class="quiz-card reaction-card">
+      <div class="quiz-top">
+        <div id="progress">Вопрос 1 / 15</div>
+        <div>Реакция: кто ответит первым</div>
+      </div>
+
+      <div class="term-label">Вопрос без вариантов</div>
+      <h2 id="reactionQuestion" class="reaction-question">Загрузка...</h2>
+
+      <div id="reactionAnswerBox" class="answer-box hidden"></div>
+
+      <div class="quiz-bottom">
+        <button id="showReactionAnswerBtn" class="action-btn">Показать ответ</button>
+        <button id="nextReactionBtn" class="action-btn">Следующий</button>
+        <a href="index.html" class="action-btn menu-link">Главное меню</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="reaction.js"></script>
+</body>
+</html>

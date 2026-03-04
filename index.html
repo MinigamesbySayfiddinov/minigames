@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мини игры</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="menu-page">
+  <div class="menu-wrap">
+    <div class="menu-card">
+      <div class="author">Created by Sayfiddinov</div>
+      <h1>Мини игры</h1>
+      <p class="subtitle"></p>
+
+      <div class="menu-grid">
+        <a class="menu-btn active" href="quiz.html">Викторина</a>
+        <a class="menu-btn active" href="rebus.html">Ребусы</a>
+        <a class="menu-btn active" href="term.html">Термин</a>
+        <a class="menu-btn active" href="balance.html">Баланс</a>
+        <a class="menu-btn active" href="oddoneout.html">Лишний</a>
+        <a class="menu-btn active" href="reaction.html">Реакция</a>
+      </div>
+
+      <div class="hint">
+        Выберите режим игры</div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('button[data-game]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const game = btn.dataset.game;
+        alert(game + ': страницу для этой игры можно добавить позже.');
+      });
+    });
+  </script>
+</body>
+</html>

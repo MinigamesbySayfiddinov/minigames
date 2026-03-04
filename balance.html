@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Баланс</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="quiz-page">
+  <div class="quiz-wrap">
+    <div class="quiz-card balance-card">
+      <div class="quiz-top">
+        <div id="progress">Ситуация 1 / 20</div>
+        <div>Баланс: риск или безопасно</div>
+      </div>
+
+      <div class="term-label">Ситуация</div>
+      <h2 id="balanceSituation" class="balance-situation">Загрузка...</h2>
+
+      <div class="balance-buttons">
+        <button id="riskBtn" class="btn false-btn">Рискованно</button>
+        <button id="safeBtn" class="btn true-btn">Безопасно</button>
+      </div>
+
+      <div id="balanceResult" class="result"></div>
+
+      <div class="quiz-bottom">
+        <button id="showBalanceAnswerBtn" class="action-btn">Показать ответ</button>
+        <button id="nextBalanceBtn" class="action-btn">Следующий</button>
+        <a href="index.html" class="action-btn menu-link">Главное меню</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="balance.js"></script>
+</body>
+</html>
